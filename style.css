@@ -57,8 +57,14 @@ main{
     margin-top: 2rem;
 }
 
-.step1-number{
-    background-color: var(--light-blue);
+.container-img-step{
+    display: flex;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.step-number{
+    background-color: transparent;
+    border: 1px solid var(--alabaster);
     width: 1rem;
     height: 1rem;
     display: flex;
@@ -70,10 +76,16 @@ main{
     margin-right: 1rem;
     font-size: .9rem;
     font-weight: 700;
-    color: var(--marine-blue);
+    color: var(--alabaster);
 }
 
-.step1-text p{
+.selected{
+    background-color: var(--light-blue);
+    color: var(--marine-blue);
+    border: none;
+}
+
+.step-text p{
     color: var(--medium-gray);
     text-transform: uppercase;
     font-size: .8rem;
@@ -81,7 +93,7 @@ main{
     margin-bottom: .2rem;
 }
 
-.step1-text h2{
+.step-text h2{
     color: var(--alabaster);
     text-transform: uppercase;
     font-size: 1rem;
