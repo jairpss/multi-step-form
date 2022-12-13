@@ -47,8 +47,8 @@
 
     <div class="container-info">
 
-        <div class="container-info-step1">
-          <div class="step1-header">
+        <div class="container-info-step" id="step1">
+          <div class="step-header">
             <h1>Personal Info</h1>
             <p>Please provide your name, email address, and phone number.</p>
           </div>
@@ -56,13 +56,27 @@
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="e.g. Stephen King" required/>
 
-            <label for="enail">Email Address</label>
+            <label for="email">Email Address</label>
             <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" required/>
 
             <label for="phone">Phone Number</label>
             <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890" required/>
           </div>
-          <div class="step1-btn">
+          <div class="step-btn">
+            <button class="next-step-btn">Next Step</button>
+          </div>
+        </div>
+
+        <div class="container-info-step" id="step2">
+          <div class="step-header">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+          <div class="step1-form">
+            
+          </div>
+          <div class="step-btn">
+            <button class="btn-back">Go Back</button>
             <button class="next-step-btn">Next Step</button>
           </div>
         </div>

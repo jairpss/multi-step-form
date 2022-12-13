@@ -109,15 +109,15 @@ main{
     margin: 1rem;
 }
 
-.step1-header h1{
+.step-header h1{
     color: var(--marine-blue);
     margin-bottom: .6rem;
 }
 
-.step1-header{
+.step-header{
     margin-bottom: 2rem;
 }
-.step1-header p{
+.step-header p{
     color: var(--medium-gray);
 }
 
@@ -151,7 +151,7 @@ main{
     outline: 1px solid var(--purplish-blue);
 }
 
-.step1-btn{
+.step-btn{
     display: flex;
     justify-content: flex-end;
     margin-top: 6rem;
@@ -171,4 +171,8 @@ main{
     cursor: pointer;
     background-color: var(--marine-blue-medium);
  
+}
+
+#step1{
+    display: none;
 }
