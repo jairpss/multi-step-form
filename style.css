@@ -153,7 +153,7 @@ main{
 
 .step-btn{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 6rem;
 }
 
@@ -175,4 +175,61 @@ main{
 
 #step1{
     display: none;
+}
+
+.container-plans {
+    display: flex;
+}
+
+.plan-div{
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-gray);
+    padding: 1rem 1rem 1rem 1rem;
+    margin-right: 1rem;
+    border-radius: .6rem;
+}
+
+.plan-div:hover{
+    border-color: var(--purplish-blue);
+    cursor: pointer;
+}
+
+.plan-div:last-child{
+    margin-right: 0;
+}
+
+.selected-plan{
+    background-color: var(--magnolia);
+    border-color: var(--purplish-blue);
+}
+
+.plan-img{
+    margin-bottom: 2rem;
+}
+
+.plan-div_text h5{
+    color: var(--marine-blue-medium);
+    font-size: 1rem;
+    margin-bottom: .4rem;
+}
+
+.plan-price{
+    color: var(--medium-gray);
+    font-size: .9rem;
+}
+
+.btn-back{
+    border: none;
+    color: var(--cool-gray);
+    background-color: transparent;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.btn-back:hover{
+    color: var(--marine-blue);
+    cursor: pointer;
 }
