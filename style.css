@@ -220,6 +220,23 @@ main{
     font-size: .9rem;
 }
 
+.container-switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--magnolia);
+    border-radius:.6rem;
+}
+
+.container-switch p{
+    font-weight: 500;
+    font-size: .9rem;
+    color: var(--cool-gray);
+}
+
+
 .btn-back{
     border: none;
     color: var(--cool-gray);
@@ -232,4 +249,42 @@ main{
 .btn-back:hover{
     color: var(--marine-blue);
     cursor: pointer;
+}
+
+/* -------SWITCH--------- */
+
+.switch {
+    position: relative; width: 40px;
+    margin: 0 1rem;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.switch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.switch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 22px; padding: 0; line-height: 22px;
+    border: 2px solid var(--marine-blue); border-radius: 20px;
+    background-color: var(--marine-blue);
+    transition: background-color 0.1s ease-in;
+}
+.switch-label:before {
+    content: "";
+    display: block; width: 14px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 18px;
+    border: 4px solid var(--marine-blue); border-radius: 20px;
+    transition: all 0.1s ease-in 0s; 
+}
+.switch-checkbox:checked + .switch-label {
+    background-color: var(--marine-blue);
+}
+.switch-checkbox:checked + .switch-label, .switch-checkbox:checked + .switch-label:before {
+   border-color: var(--marine-blue);
+}
+.switch-checkbox:checked + .switch-label:before {
+    right: 0px; 
 }
