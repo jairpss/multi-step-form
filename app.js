@@ -14,12 +14,30 @@ for (let div of plans) {
 }
 
 const myswitch = document.getElementById('myswitch')
-const pswitch = document.getElementsByClassName('switch-plan')
+const month = document.getElementById('switch-month')
+const year = document.getElementById('switch-year')
 
-function(){
-    if (myswitch.selected){
-        pswitch.style.color = 'red'
+myswitch.addEventListener('change',(event) => {
+    if (myswitch.checked == true) {
+        year.classList.add('selected-switch')
+        month.classList.remove('selected-switch')
+        console.log("selected plan Yearly")
+    } else {
+        month.classList.add('selected-switch')
+        year.classList.remove('selected-switch')
+        console.log("selected plan monthly")
     }
-}
+})
 
-//how to change the color of a text with switch toggle?
+// const myswitch = document.getElementById('myswitch')
+// const pswitch = document.getElementsByClassName('switch-plan')
+
+// myswitch.addEventListener('change',(event) => {
+//     if (event.currentTarget.checked) {
+//         pswitch.classList.add('selected-switch')
+//         console.log("selected plan")
+//     } else {
+//         pswitch.classList.remove('selected-switch')
+//     }
+// })
+//how to change the color of a text with switch toggle? 

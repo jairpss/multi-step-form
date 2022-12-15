@@ -228,14 +228,18 @@ main{
     padding: 1rem 2rem;
     background-color: var(--magnolia);
     border-radius:.6rem;
+    color: var(--cool-gray);
 }
 
 .container-switch p{
     font-weight: 500;
     font-size: .9rem;
-    color: var(--cool-gray);
+    /* color: var(--cool-gray); */
 }
 
+.selected-switch{
+    color: var(--marine-blue);
+}
 
 .btn-back{
     border: none;
