@@ -1,4 +1,4 @@
-//how to add a class in a selected div and remove from another
+//how to add and remove a class with a toggle?
 
 const plans = document.querySelectorAll("#plans > div") 
 
@@ -12,3 +12,14 @@ for (let div of plans) {
         console.log("class added")
     })
 }
+
+const myswitch = document.getElementById('myswitch')
+const pswitch = document.getElementsByClassName('switch-plan')
+
+function(){
+    if (myswitch.selected){
+        pswitch.style.color = 'red'
+    }
+}
+
+//how to change the color of a text with switch toggle?
