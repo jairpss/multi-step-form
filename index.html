@@ -79,7 +79,10 @@
                   </div>
                   <div class="plan-div_text">
                       <h5>Arcade</h5>
-                      <p class="plan-price">$9/mo</p>
+                      <p class="plan-price">$9<span id="add-zero-arc" class="add-zero">0</span>/mo</p>
+                      <div class="plan-yearly" id="plan-yearly-arc">
+                        <p class="plan-yearly-text">2 months free</p>
+                      </div>
                   </div>
               </div>
 
@@ -89,7 +92,10 @@
                 </div>
                 <div class="plan-div_text">
                     <h5>Advanced</h5>
-                    <p class="plan-price">$12/mo</p>
+                    <p class="plan-price">$12<span id="add-zero-adv" class="add-zero">0</span>/mo</p>
+                    <div class="plan-yearly" id="plan-yearly-adv">
+                      <p class="plan-yearly-text">2 months free</p>
+                    </div>
                 </div>
               </div>
 
@@ -99,14 +105,17 @@
                   </div>
                   <div class="plan-div_text">
                       <h5>Pro</h5>
-                      <p class="plan-price">$15/mo</p>
+                      <p class="plan-price">$15<span id="add-zero-pro" class="add-zero">0</span>/mo</p>
+                      <div id="plan-yearly-pro" class="plan-yearly">
+                        <p class="plan-yearly-text">2 months free</p>
+                      </div>
                   </div>
               </div>
           </div>
           <div class="container-switch">
             <p id="switch-month">Monthly</p>
             <div class="switch">
-              <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch" tabindex="0" checked>
+              <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch" tabindex="0">
               <label class="switch-label" for="myswitch"></label>
             </div>
             <p id="switch-year">Yearly</p>

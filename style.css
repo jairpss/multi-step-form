@@ -220,6 +220,20 @@ main{
     font-size: .9rem;
 }
 
+.plan-yearly{
+    display:none;
+}
+
+.add-zero{
+    display:none;
+}
+
+.plan-yearly-text{
+    margin-top: .5rem;
+    color: var(--marine-blue-medium);
+    font-size: .8rem;
+    font-weight: 500;
+}
 .container-switch{
     display: flex;
     justify-content: center;
