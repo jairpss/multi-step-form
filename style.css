@@ -45,6 +45,7 @@ main{
     -moz-box-shadow: 1px 11px 19px 4px rgba(238, 239, 240, 0.6);
 }
 
+/*----------Sidebar------------*/
 .container-sidebar{
     width: 274px;
     background-image: url(./assets/images/bg-sidebar-desktop.svg);
@@ -102,7 +103,7 @@ main{
     letter-spacing: 1px;
 }
 
-/*----------Info Container------------*/
+/*----------Step 1------------*/
 
 .container-info{
     padding: 3rem;
@@ -160,7 +161,7 @@ main{
 .next-step-btn{
     background-color: var(--marine-blue);
     color: var(--white);
-    padding: .8rem 1.5rem;
+    padding: .6rem 1.6rem;
     border-radius: .3rem;
     font-size: .9rem;
     font-weight: 400;
@@ -177,6 +178,10 @@ main{
     display: none;
 }
 
+/*----------Step 2------------*/
+#step2{
+    display: none;
+}
 .container-plans {
     display: flex;
 }
@@ -234,6 +239,8 @@ main{
     font-size: .8rem;
     font-weight: 500;
 }
+
+/*----------Switch------------*/
 .container-switch{
     display: flex;
     justify-content: center;
@@ -254,22 +261,6 @@ main{
 .selected-switch{
     color: var(--marine-blue);
 }
-
-.btn-back{
-    border: none;
-    color: var(--cool-gray);
-    background-color: transparent;
-    padding: 1rem;
-    font-size: .9rem;
-    font-weight: 500;
-}
-
-.btn-back:hover{
-    color: var(--marine-blue);
-    cursor: pointer;
-}
-
-/* -------SWITCH--------- */
 
 .switch {
     position: relative; width: 40px;
@@ -305,4 +296,26 @@ main{
 }
 .switch-checkbox:checked + .switch-label:before {
     right: 0px; 
+}
+
+/*----------Back Button------------*/
+.btn-back{
+    border: none;
+    color: var(--cool-gray);
+    background-color: transparent;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.btn-back:hover{
+    color: var(--marine-blue);
+    cursor: pointer;
+}
+
+/*----------Step 3------------*/
+
+.step3-options{
+    display: flex;
+    flex-direction: column;
 }
