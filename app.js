@@ -47,3 +47,23 @@ myswitch.addEventListener('change',(event) => {
         console.log("selected plan monthly")
     }
 })
+
+
+const div1 = document.getElementById('opt-1')
+const div2 = document.getElementById('opt-2')
+const div3 = document.getElementById('opt-3')
+
+div1.addEventListener('click', function onClick(event) {
+    div1.style.backgroundColor = '#fafbff'
+    div1.style.borderColor = '#473dff'
+})
+
+div2.addEventListener('click', function onClick(event) {
+    div2.style.backgroundColor = '#fafbff'
+    div2.style.borderColor = '#473dff'
+})
+
+div3.addEventListener('click', function onClick(event) {
+    div3.style.backgroundColor = '#fafbff'
+    div3.style.borderColor = '#473dff'
+})

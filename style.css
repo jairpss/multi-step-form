@@ -341,7 +341,7 @@ main{
 
 .option-checkbox{
     margin-right: 1rem;
-    border-color: var(--light-gray);
+    border: 1px solid var(--light-gray);
 }
 
 .option-info{
