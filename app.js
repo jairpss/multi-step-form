@@ -48,22 +48,42 @@ myswitch.addEventListener('change',(event) => {
     }
 })
 
-
+const cb1 = document.getElementById('checkbx1')
+const cb2 = document.getElementById('checkbx2')
+const cb3 = document.getElementById('checkbx3')
 const div1 = document.getElementById('opt-1')
 const div2 = document.getElementById('opt-2')
 const div3 = document.getElementById('opt-3')
 
-div1.addEventListener('click', function onClick(event) {
-    div1.style.backgroundColor = '#fafbff'
-    div1.style.borderColor = '#473dff'
+cb1.addEventListener('change', (event) => {
+    if (cb1.checked == true) {
+        div1.style.backgroundColor = '#fafbff'
+        div1.style.borderColor = '#473dff'
+    } else {
+        div1.style.backgroundColor = '#fff'
+        div1.style.borderColor = '#d6d9e6'
+    }
+    
 })
 
-div2.addEventListener('click', function onClick(event) {
-    div2.style.backgroundColor = '#fafbff'
-    div2.style.borderColor = '#473dff'
+cb2.addEventListener('change', (event) => {
+    if (cb2.checked == true) {
+        div2.style.backgroundColor = '#fafbff'
+        div2.style.borderColor = '#473dff'
+    } else {
+        div2.style.backgroundColor = '#fff'
+        div2.style.borderColor = '#d6d9e6'
+    }
+    
 })
 
-div3.addEventListener('click', function onClick(event) {
-    div3.style.backgroundColor = '#fafbff'
-    div3.style.borderColor = '#473dff'
+cb3.addEventListener('change', (event) => {
+    if (cb3.checked == true) {
+        div3.style.backgroundColor = '#fafbff'
+        div3.style.borderColor = '#473dff'
+    } else {
+        div3.style.backgroundColor = '#fff'
+        div3.style.borderColor = '#d6d9e6'
+    }
+    
 })
