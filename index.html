@@ -46,6 +46,7 @@
     </div>
 
     <div class="container-info">
+
         <div class="container-info-step" id="step1">
           <div class="step-header">
             <h1>Personal Info</h1>
@@ -62,9 +63,10 @@
             <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890" required/>
           </div>
           <div class="step-btn">
-            <button class="next-step-btn">Next Step</button>
+            <button class="next-step-btn" id="btn-next-1">Next Step</button>
           </div>
         </div>
+
 
         <div class="container-info-step" id="step2">
           <div class="step-header">
@@ -120,12 +122,12 @@
             <p id="switch-year">Yearly</p>
           </div>
           <div class="step-btn">
-            <button class="btn-back">Go Back</button>
-            <button class="next-step-btn">Next Step</button>
+            <button class="btn-back" id="btn-back-2">Go Back</button>
+            <button class="next-step-btn" id="btn-next-2">Next Step</button>
           </div>
         </div>
 
-        <div class="container-step3">
+        <div class="container-step3" id="step3">
 
           <div class="container-info-step" id="step3">
             <div class="step-header">
@@ -179,11 +181,33 @@
           </div>
 
           <div class="step-btn">
-            <button class="btn-back">Go Back</button>
-            <button class="next-step-btn">Next Step</button>
+            <button class="btn-back" id="btn-back-3">Go Back</button>
+            <button class="next-step-btn" id="btn-next-3">Next Step</button>
           </div>
 
         </div>
+
+        <div class="container-step4" id="step4">
+
+          <div class="container-info-step">
+            <div class="step-header">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.</p>
+            </div>
+          </div>  
+          <div class="container-step3-info">
+              <div class="step3-info-plan"></div>
+              <div class="step3-info-services"></div>
+              <div class="step3-info-total"></div>
+          </div>
+
+          <div class="step-btn">
+            <button class="btn-back" id="btn-back-3">Go Back</button>
+            <button class="btn-confirm" id="btn-finish">Confirm</button>
+          </div>
+
+        </div>
+
 
     </div>
 

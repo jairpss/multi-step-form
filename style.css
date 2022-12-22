@@ -5,6 +5,7 @@
 --marine-blue: hsl(213, 96%, 18%);
 --marine-blue-medium: hsl(213, 87%, 30%);
 --purplish-blue: hsl(243, 100%, 62%);
+--purplish-blue-light: hsl(243, 83%, 70%);
 --pastel-blue: hsl(228, 100%, 84%);
 --light-blue: hsl(206, 94%, 87%);
 --strawberry-red: hsl(354, 84%, 57%);
@@ -45,7 +46,7 @@ main{
     -moz-box-shadow: 1px 11px 19px 4px rgba(238, 239, 240, 0.6);
 }
 
-/*----------Sidebar------------*/
+/*--------------------- Sidebar ------------------------*/
 .container-sidebar{
     width: 274px;
     background-image: url(./assets/images/bg-sidebar-desktop.svg);
@@ -103,7 +104,7 @@ main{
     letter-spacing: 1px;
 }
 
-/*----------Step 1------------*/
+/*--------------------- Step 1 ------------------------*/
 
 .container-info{
     padding: 3rem;
@@ -178,7 +179,8 @@ main{
     display: none;
 }
 
-/*----------Step 2------------*/
+/*--------------------- Step 2 ------------------------*/
+
 #step2{
     display: none;
 }
@@ -313,7 +315,11 @@ main{
     cursor: pointer;
 }
 
-/*----------Step 3------------*/
+/*--------------------- Step 3 ------------------------*/
+
+.container-step3{
+    display: none;
+}
 
 .step3-options{
     display: flex;
@@ -369,3 +375,23 @@ main{
     color: var(--purplish-blue);
     font-size: .8rem;
 }
+
+/*--------------------- Step 4 ------------------------*/
+
+
+.btn-confirm{
+    background-color: var(--purplish-blue);
+    color: var(--white);
+    padding: .6rem 1.6rem;
+    border-radius: .3rem;
+    font-size: .9rem;
+    font-weight: 400;
+    border:none;
+}
+
+.btn-confirm:hover{
+    background-color: var(--purplish-blue-light);
+    cursor: pointer;
+}
+
+
