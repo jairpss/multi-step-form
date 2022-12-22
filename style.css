@@ -378,6 +378,85 @@ main{
 
 /*--------------------- Step 4 ------------------------*/
 
+.container-step4-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.step4-info-text{
+    background-color: var(--alabaster);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+
+.info-text-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.text-plan-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-plan-title h4{
+    color: var(--marine-blue-medium);
+    margin-bottom: .2rem;
+}
+.text-plan-title a {
+    color: var(--cool-gray);
+    font-size: .9rem;
+}
+
+.text-plan-amount p{
+    color: var(--marine-blue-medium);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+hr{
+    border: .5px solid var(--light-gray);
+    margin: 1.8rem 0;
+}
+
+.info-text-services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.service-text{
+    color: var(--cool-gray);
+    font-size: .9rem;
+}
+
+.service-price{
+    color: var(--marine-blue-medium);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.step4-info-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.info-total-text{
+    color: var(--cool-gray);
+    font-size: 1rem;
+}
+
+.info-total-amount{
+    color: var(--purplish-blue);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 
 .btn-confirm{
     background-color: var(--purplish-blue);
