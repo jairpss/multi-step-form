@@ -87,3 +87,70 @@ cb3.addEventListener('change', (event) => {
     }
     
 })
+
+const divStep1 = document.getElementById('step1')
+const divStep2 = document.getElementById('step2')
+const divStep3 = document.getElementById('step3')
+const divStep4 = document.getElementById('step4')
+
+const btnStep1 = document.getElementById('btn-next-1')
+const btnStep2 = document.getElementById('btn-next-2')
+const btnStep3 = document.getElementById('btn-next-3')
+
+const btnBack2 = document.getElementById('btn-back-2')
+const btnBack3 = document.getElementById('btn-back-3')
+const btnBack4 = document.getElementById('btn-back-4')
+
+const step1Num = document.getElementById('step1-num')
+const step2Num = document.getElementById('step2-num')
+const step3Num = document.getElementById('step3-num')
+const step4Num = document.getElementById('step4-num')
+
+
+btnStep1.addEventListener("click", function() {
+    step1Num.classList.remove('selected')
+    step2Num.classList.add('selected')
+    divStep1.classList.remove('showDiv')
+    divStep2.classList.remove('hideDiv')
+    divStep2.classList.add('showDiv')
+})
+
+btnBack2.addEventListener("click", function() {
+    step1Num.classList.add('selected')
+    step2Num.classList.remove('selected')
+    divStep1.classList.add('showDiv')
+    divStep2.classList.add('hideDiv')
+    divStep2.classList.remove('showDiv')
+})
+
+btnStep2.addEventListener("click", function() {
+    step2Num.classList.remove('selected')
+    step3Num.classList.add('selected')
+    divStep2.classList.remove('showDiv')
+    divStep3.classList.remove('hideDiv')
+    divStep3.classList.add('showDiv')
+})
+
+btnBack3.addEventListener("click", function() {
+    step2Num.classList.add('selected')
+    step3Num.classList.remove('selected')
+    divStep2.classList.add('showDiv')
+    divStep3.classList.add('hideDiv')
+    divStep3.classList.remove('showDiv')
+})
+
+btnStep3.addEventListener("click", function() {
+    step3Num.classList.remove('selected')
+    step4Num.classList.add('selected')
+    divStep3.classList.remove('showDiv')
+    divStep4.classList.remove('hideDiv')
+    divStep4.classList.add('showDiv')
+})
+
+btnBack4.addEventListener("click", function() {
+    step3Num.classList.add('selected')
+    step4Num.classList.remove('selected')
+    divStep3.classList.add('showDiv')
+    divStep4.classList.add('hideDiv')
+    divStep4.classList.remove('showDiv')
+})

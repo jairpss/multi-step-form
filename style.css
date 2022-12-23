@@ -46,6 +46,8 @@ main{
     -moz-box-shadow: 1px 11px 19px 4px rgba(238, 239, 240, 0.6);
 }
 
+
+
 /*--------------------- Sidebar ------------------------*/
 .container-sidebar{
     width: 274px;
@@ -105,10 +107,17 @@ main{
 }
 
 /*--------------------- Step 1 ------------------------*/
+#step1{
+    
+}
 
 .container-info{
     padding: 3rem;
     margin: 1rem;
+}
+
+.container-info-step{
+    display: none;
 }
 
 .step-header h1{
@@ -159,10 +168,15 @@ main{
     margin-top: 6rem;
 }
 
+#step-1-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .next-step-btn{
     background-color: var(--marine-blue);
     color: var(--white);
-    padding: .6rem 1.6rem;
+    padding: .9rem 1.6rem;
     border-radius: .3rem;
     font-size: .9rem;
     font-weight: 400;
@@ -175,14 +189,9 @@ main{
  
 }
 
-#step1{
-    display: none;
-}
-
 /*--------------------- Step 2 ------------------------*/
 
 #step2{
-    display: none;
 }
 .container-plans {
     display: flex;
@@ -377,6 +386,8 @@ main{
 }
 
 /*--------------------- Step 4 ------------------------*/
+#step4 {
+}
 
 .container-step4-info{
     display: flex;
@@ -409,6 +420,10 @@ main{
 .text-plan-title a {
     color: var(--cool-gray);
     font-size: .9rem;
+}
+
+.text-plan-title a:hover{
+    color: var(--purplish-blue);
 }
 
 .text-plan-amount p{
@@ -473,4 +488,12 @@ hr{
     cursor: pointer;
 }
 
+/*--------------------Functions------------------------*/
 
+.showDiv{
+    display: block;
+}
+
+.hideDiv{
+    display: none;
+}
