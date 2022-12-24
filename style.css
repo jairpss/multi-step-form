@@ -488,6 +488,19 @@ hr{
     cursor: pointer;
 }
 
+
+.container-thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.text-thanks{
+    
+}
+
 /*--------------------Functions------------------------*/
 
 .showDiv{
