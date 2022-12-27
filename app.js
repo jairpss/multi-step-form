@@ -96,6 +96,7 @@ const divStep4 = document.getElementById('step4')
 const btnStep1 = document.getElementById('btn-next-1')
 const btnStep2 = document.getElementById('btn-next-2')
 const btnStep3 = document.getElementById('btn-next-3')
+const link = document.getElementById('link-change')
 
 const btnBack2 = document.getElementById('btn-back-2')
 const btnBack3 = document.getElementById('btn-back-3')
@@ -151,6 +152,14 @@ btnBack4.addEventListener("click", function() {
     step3Num.classList.add('selected')
     step4Num.classList.remove('selected')
     divStep3.classList.add('showDiv')
+    divStep4.classList.add('hideDiv')
+    divStep4.classList.remove('showDiv')
+})
+
+link.addEventListener('click', function(){
+    step2Num.classList.add('selected')
+    step4Num.classList.remove('selected')
+    divStep2.classList.add('showDiv')
     divStep4.classList.add('hideDiv')
     divStep4.classList.remove('showDiv')
 })
